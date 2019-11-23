@@ -1,2 +1,3 @@
 Django
-collections
+django_heroku
+gunicorn
