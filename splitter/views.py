@@ -14,7 +14,7 @@ def index(request):
 		if request.POST.get('query2'):
 			inp = request.POST.get('query2')
 			inp2 = request.POST.get('query3')
-			out,le=x.sen(inp,inp2)
+			out,le=x.sen(inp,inp2,"\n\n\n")
 			print(out)
 			return render(request,temp2,context={'out':out , 'len':le})
 		elif request.FILES['query1']:
@@ -33,7 +33,7 @@ def index(request):
 					inp = file.read()
 			print(inp)
 			inp2 = request.POST.get('query3')
-			out,le=x.sen(inp,inp2)
+			out,le=x.sen(inp,inp2,"\n\n")
 			print(out)
 			return render(request,temp2,context={'out':out , 'len':le})
 	return render(request,temp1)
