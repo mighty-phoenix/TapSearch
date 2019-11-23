@@ -1,0 +1,33 @@
+{% load static%}
+<!DOCTYPE html>
+<head>
+	<title>TapSearch</title>
+	<link rel="stylesheet" href="{% static 'splitter/new.css' %}">
+</head>
+<body>
+	<div class="container">  
+  <form id="contact" name="queryform" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h3 style="text-align: center;">TapSearch</h3>
+    Select a PDF file: <input type="file" name="query1">
+    <div>Or...</div>
+    <fieldset>
+      <textarea placeholder="Type your paragraphs here...." tabindex="5" name="query2"></textarea>
+    </fieldset>
+    <h4 id="he" style="display: none;">Enter query</h4>
+    <fieldset id="query" style="display: none;">
+      <textarea type="hidden" placeholder="Type your query here...." tabindex="10" name="query3" value=""></textarea>
+    </fieldset>
+    <fieldset>
+      <button ondbclick="querysubmit()" onclick="queryshow()">Submit</button>
+    </fieldset>
+  </form>
+</div>
+</body>
+<script type="text/javascript">
+  var counter = 0;
+  function queryshow(){
+  document.getElementById('query').style.display = 'block';
+  document.getElementById('he').style.color = 'block';
+}
+</script>
