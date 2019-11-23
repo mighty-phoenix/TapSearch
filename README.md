@@ -18,6 +18,7 @@
 
 ```
 1. Select PDF file or enter paragraphs in the given space.
+   Separate each paragraph using two new lines.
 2. Enter word to search for in paragraphs.
 3. See the top 10 results!
 ```
