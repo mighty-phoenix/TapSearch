@@ -14,20 +14,13 @@
     <fieldset>
       <textarea placeholder="Type your paragraphs here...." tabindex="5" name="query2"></textarea>
     </fieldset>
-    <h4 id="he" style="display: none;">Enter query</h4>
-    <fieldset id="query" style="display: none;">
-      <textarea type="hidden" placeholder="Type your query here...." tabindex="10" name="query3" value=""></textarea>
+    <h4>Enter query</h4>
+    <fieldset>
+      <textarea placeholder="Type your query here...." tabindex="10" name="query3" value=""></textarea>
     </fieldset>
     <fieldset>
-      <button ondbclick="querysubmit()" onclick="queryshow()">Submit</button>
+      <button name="submit" type="submit">Submit</button>
     </fieldset>
   </form>
 </div>
 </body>
-<script type="text/javascript">
-  var counter = 0;
-  function queryshow(){
-  document.getElementById('query').style.display = 'block';
-  document.getElementById('he').style.color = 'block';
-}
-</script>
