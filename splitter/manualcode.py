@@ -36,9 +36,9 @@ class Code:
 		self.index.clear()
 		self.documents.clear()
 		
-	def sen(self,d,query):
+	def sen(self,d,query,splitter):
 		d=d.replace("\r\n","\n")
-		d=d.split("\n\n\n") # Splitting paragraphs
+		d=d.split(splitter) # Splitting paragraphs
 		# print(d)
 		for i in d:
 			i.replace("\n"," ")
