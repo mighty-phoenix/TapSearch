@@ -13,7 +13,7 @@ SECRET_KEY = 'b($1gf=^x6r-*fn^3-26^@_1^qnodrrjd6-9b3arctx@pf)@ah'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tap-search-1.herokuapp.com']
+ALLOWED_HOSTS = ['tap-search-3.herokuapp.com']
 MEDIA_URL = 'splitter/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'splitter/media')
 
