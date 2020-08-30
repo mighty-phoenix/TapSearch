@@ -1,12 +1,8 @@
 # TapSearch
 
-## Deployed website
-
-[Click here](http://tap-search-3.herokuapp.com/) to open the deployed version of the website.
-
 ## What is Tap Search?
 
-[TapSearch](http://tap-search-3.herokuapp.com/) is a simple program that achieves the following objectives:
+TapSearch is a simple program that achieves the following objectives:
 
 ```
 1. It takes in multiple paragraphs of text, assigns a unique ID To each paragraph and
